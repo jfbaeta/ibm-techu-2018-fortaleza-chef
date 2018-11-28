@@ -1,0 +1,8 @@
+<VirtualHost *:80>
+   ServerAdmin admin@<%= @ambiente %>.ibmtechu2018.com.br
+   ServerName <%= @ambiente %>.ibmtechu2018.com.br
+   ServerAlias www.<%= @ambiente %>.ibmtechu2018.com.br
+   DocumentRoot /var/www/html/<%= @ambiente %>.ibmtechu2018.com.br/public_html
+   ErrorLog ${APACHE_LOG_DIR}/error.log
+   CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
